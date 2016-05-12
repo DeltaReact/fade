@@ -7,6 +7,7 @@ module.exports = fade;
 fade.fade = function fade (element, isIn, callback, inValue, outValue) {
   if (inValue === undefined) inValue = 1;
   if (outValue === undefined) outValue = 0;
+  if (!callback) callback = (function () {  });
   var fadeTime = 1000;
   if (element[0]) element = element[0];
   if (isIn === true) {
