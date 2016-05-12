@@ -8,6 +8,7 @@ fade.fade = function fade (element, isIn, callback, inValue, outValue) {
   if (inValue === undefined) inValue = 1;
   if (outValue === undefined) outValue = 0;
   var fadeTime = 1000;
+  if (element[0]) element = element[0];
   if (isIn === true) {
     element.style.display = (element.dataset.fadeInlineBlock ? "inline-block" : "block");
     $(element).stop().animate({ "opacity": inValue }, fadeTime, "swing", callback);
