@@ -18,6 +18,6 @@
   "browser": "index.js",
   "license": "Unlicense",
   "dependencies": {
-    "jquery": "^2.1.4"
+    "velocity-animate": "^1.2.3"
   }
 }
